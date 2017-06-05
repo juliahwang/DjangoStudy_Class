@@ -26,3 +26,11 @@ class TradeInfo(models.Model):
     # 추가 필드가 없으면 기본 many-to-many 모델을 구현한 것이 된다.
     date_joined = models.DateField()
     date_left = models.DateField(null=True, blank=True)
+
+    def __str__(self):
+        return '{} from {} joined on {}, left on {}'.format(
+            self.player,
+            self.club,
+            self.date_joined,
+            self.date_left,
+        )
