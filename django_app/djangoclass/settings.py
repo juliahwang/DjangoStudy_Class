@@ -37,6 +37,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    # 장고 익스텐션 설치 후 세팅에 등록
+    'django_extensions',
+    # 만든 앱 등록
+    'introduction_to_models',
 ]
 
 MIDDLEWARE = [
